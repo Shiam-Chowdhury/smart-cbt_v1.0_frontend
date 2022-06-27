@@ -50,6 +50,7 @@ const List = () => {
           title="Add New Question"
           columns={questionColumns}
           rows={questionRows}
+          tag="questions"
         />
       </div>
     </div>

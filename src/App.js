@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AddQuestion from "./pages/addQuestion/addQuestion";
 import Home from "./pages/home/Home";
-import New from "./pages/new/New";
 import QuestionList from "./pages/question/List";
 import List from "./pages/questionSet/List";
 import Single from "./pages/single/Single";
@@ -16,16 +16,16 @@ function App() {
               <Route index element={<QuestionList />} />
               <Route path=":questionId" element={<Single />} />
               <Route
-                path="new"
-                element={<New />}
+                path="add"
+                element={<AddQuestion />}
               />
             </Route>
             <Route path="question-sets">
               <Route index element={<List />} />
               <Route path=":questionSetId" element={<Single />} />
               <Route
-                path="new"
-                element={<New />}
+                path="add"
+                element={<AddQuestion />}
               />
             </Route>
           </Route>

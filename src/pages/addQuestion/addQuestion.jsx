@@ -1,18 +1,18 @@
-import "./new.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
+import AddQuestion from "../../components/questions/addQuestion";
 
-const New = ({ inputs, title }) => {
+const addQuestion = ({ inputs, title }) => {
 
   return (
     <div className="new">
       <Sidebar />
       <div className="newContainer">
         <Navbar />
-        New
+        <AddQuestion />
       </div>
     </div>
   );
 };
 
-export default New;
+export default addQuestion;
